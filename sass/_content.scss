@@ -1,0 +1,294 @@
+
+/*section*/
+.patter {
+  .title-heading {
+    font-size: 24px;
+    padding: 30px 0 0;
+    font-family: 'latoblack';
+  }
+  .list {
+    .list-item {
+      list-style: none;
+      .catery {
+        margin-top: 30px;
+        .catery-text {
+          position: relative;
+          color: map-get($color, orange);
+          padding: 5px 0 21px 0;
+          border-bottom: 1px solid map-get($color, gray_b);
+          margin-top: 30px;
+          line-height: 1;
+          cursor: pointer;
+          span {
+              display: inline-block;
+              font-size: 18px;
+              text-transform: uppercase;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            background: #ee4415;
+            width: 50px;
+            height: 3px;
+            bottom: -1px;
+            left: 0;
+          }
+        }
+        .catery-text1 {
+          padding: 21px 0 20px 0;
+          border-bottom: 1px solid map-get($color, gray_b);
+          .check {
+            margin-right: 10px;
+          }
+        }
+        .catery-text2 {
+          padding: 21px 0 20px 0;
+          .check {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.ner {
+  margin-top: 50px;
+}
+.img {
+  margin: 30px 0 30px;
+}
+.bottom {
+  margin-bottom: 30px;
+  .btn-large {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid map-get($color, gray_b);
+    margin-right: 6px;
+    cursor: pointer;
+    color: map-get($color, orange);
+  }
+  .btn-list {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid map-get($color, gray_b);
+    margin-right: 6px;
+    &:hover {
+      color: map-get($color, orange);
+    }
+  }
+  .compare {
+    text-decoration: none;
+    color: map-get($color, gray_e);
+    text-transform: uppercase;
+    &:hover {
+      color: map-get($color, black);
+    }
+  }
+  .selected {
+    height: 38px;
+    width: 75%;
+    background: transparent;
+    outline: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: map-get($color, gray_e);
+    border: 1px solid map-get($color, gray_b);
+  }
+  .selected2 {
+    height: 38px;
+    width: 22%;
+    background: transparent;
+    outline: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: map-get($color, gray_e);
+    border: 1px solid map-get($color, gray_b);
+  }
+}
+.image {
+  position: relative;
+  width: 100%;
+  &:hover {
+    border-bottom: 3px solid map-get($color, orange);
+    transition: all 0.2s ease-in;
+  }
+  .images {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
+  .middle {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    &:hover {
+      opacity: 1;
+    }
+    .only {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .only-item {
+        display: inline-block;
+        background-color: map-get($color, white);
+        color: white;
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        &:hover {
+          background: map-get($color, orange);
+        }
+        a {
+          margin: 15px 9px;
+          display: inline-block;
+        }
+        i {
+          color: map-get($color, black);
+          &:hover {
+            color: map-get($color, white);
+          }
+        }
+      }
+      .only-item:last-child {
+        background-color: map-get($color, orange);
+        i {
+          color: map-get($color, white);
+        }
+      }
+    }
+  }
+}
+.title-products {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 25px 0 4px;
+  font-family: "roboto";
+  &:hover {
+    color: map-get($color, orange);
+  }
+}
+.desc {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "roboto";
+  .price-news {
+    color: map-get($color, orange);
+  }
+  .price-old {
+    color: map-get($color, gray_f);
+    text-decoration: line-through;
+    margin-left: 6px;
+  }
+}
+ .pagination {
+    padding: 8px 0 0 0;
+    .text-pagi {
+      padding: 45px 0 40px 0;
+      text-align: center;
+      display: block;
+      border-top: 1px solid map-get($color, gray_b);
+      width: 100%;
+      .pagi {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .ac-pagi {
+          color: map-get($color, organge) !important;
+        }
+        .pagi-item {
+          display: inline-block;
+          width: 42px;
+          height: 42px;
+          border: 1px solid map-get($color, gray_b);
+          border-radius: 40px;
+          text-align: center;
+          margin: 0px 3px 10px 3px;
+          font-size: 17px;
+          line-height: 2.4;
+          a {
+            text-decoration: none;
+            color: map-get($color, grays);
+         }
+       }
+    }
+  }
+}
+.newletter {
+  background-image: url(../images/category/newsletter.png) no-repeat;
+  height: 500px;
+  .letter {
+    display: block;
+    text-align: center;
+    margin-top: 82px;
+    .subscribe {
+      background: url(../images/category/bg-heading.png) top center no-repeat;
+      padding: 45px 0px 0px 0px;
+      text-transform: uppercase;
+      font-size: 34px;
+      color: map-get($color, white);
+      font-family: "labo";
+    }
+    .up {
+      font-size: 24px;
+      padding: 11px 0px 0px 0px;
+      margin: 0px;
+      text-transform: none;
+      font-family: "playball";
+      color: map-get($color, white);
+      letter-spacing: 2px;
+      .special {
+        color: map-get($color, organge);
+      }
+    }
+  }
+  .lorem {
+    padding: 6px 0px 50px 0px;
+    font-size: 18px;
+    color: map-get($color, lorem);
+   }
+  .email {
+    height: 40px;
+    padding-left: 19px;
+    width: 400px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    background: transparent;
+    color: map-get($color, white);
+  }
+  .button-subscribe {
+    height: 44px;
+    border-radius: 2px;
+    padding: 10px 43px 9px 43px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: map-get($color, white);
+    background: map-get($color, organge);
+    cursor: pointer;
+    font-family: "lato";
+    font-size: 14px;
+    transition: all 0.2s ease-in;
+    &:hover {
+      color: map-get($color, white);
+      background: map-get($color, black_gray);
+    }
+  }
+}

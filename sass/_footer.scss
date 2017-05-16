@@ -1,0 +1,145 @@
+/*footer*/
+.footer-goshop {
+  background: map-get($color, black_2);
+  .shop {
+    padding: 80px 0 35px;
+    border-bottom: 1px solid map-get($color, grays_c);
+  }
+  .oc {
+    padding: 20px 0 14px;
+    color: map-get($color, grays_b);
+  }
+  .social-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .social-icons-item {
+      padding: 0 4px 0 0;
+      vertical-align: top;
+      display: inline-block;
+      a {
+        border: 1px solid map-get($color, gray_social);
+        color: map-get($color, gray_social);
+        border-radius: 100%;
+        display: block;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        background: transparent;
+        line-height: 2.2;
+        &:hover {
+          background-color: map-get($color, organge);
+          color: map-get($color, white);
+        }
+      }
+    }
+  }
+  .my-account {
+    color: map-get($color, white);
+    font-size: 16px;
+    padding: 0 0 25px;
+    font-family: 'lato';
+  }
+  .dolor {
+    color: map-get($color, grays_b);
+    padding-bottom: 25px;
+    line-height: 1.8;
+    font-size: 14px;
+    font-family: "lato";
+  }
+  .account {
+    margin: 0;
+    padding: 0;
+    .account-item {
+      list-style: none;
+      display: block;
+      padding: 0 0 4px;
+      font-family: "roboto";
+      a {
+        text-decoration: none;
+        color: map-get($color, grays_b);
+        &:hover {
+          color: map-get($color, white);
+        }
+      }
+    }
+  }
+  .contact-email {
+    display: inline-block;
+    .input-email {
+      height: 35px;
+      width: 180px;
+      outline: none;
+      border: none;
+      background: map-get($color, black_3);
+      text-indent: 10px;
+      color: map-get($color, white);
+      font-size: 14px;
+    }
+    .button {
+      background: url(../images/category/icon-mail.png) -2px -1px;
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 35px;
+      outline: none;
+      border-radius: 2px;
+      display: inline-block;
+      vertical-align: bottom;
+      transition: all 0.2s ease-in;
+    }
+    .ton {
+      background-color: map-get($color, orange);
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: map-get($color, black_3);
+      }
+    }
+  }
+  .pay {
+    display: block;
+    text-align: center;
+    position: relative;
+    .payment {
+      margin: 0;
+      padding: 0;
+      &:before {
+        content: "←";
+        position: absolute;
+        top: 40px;
+        left: 0;
+        cursor: pointer;
+      }
+      &:after {
+        content: "→";
+        position: absolute;
+        top: 40px;
+        right: 0;
+        cursor: pointer;
+      }
+    .payment-item {
+      list-style: none;
+      display: inline-block;
+      padding: 30px;
+      img {
+        opacity: 0.1;
+        transition: all 0.2s ease-in;
+        &:hover {
+          opacity: 1;
+        }
+      }
+     }
+    }
+  }
+}
+.open {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  padding: 30px;
+  background-color: map-get($color, black_1);
+  a {
+    color: map-get($color, orange);
+    text-decoration: none;
+  }
+}

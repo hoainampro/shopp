@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: map-get($color, grays);
+  font-size: 14px;
+  font-family: 'lato';
+  line-height: 1.4;
+}
+h1, h2, h3 , h4 , h5 , h6 {
+  text-transform: uppercase;
+  font-family: "roboto";
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}

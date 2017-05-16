@@ -1,0 +1,197 @@
+/*header*/
+.bg-top-bar {
+  background: map-get($color, gray);
+  .euro {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    .dropdown:first-child {
+      border-left: 1px solid map-get($color, gray_c);
+    }
+    .dropdown {
+      display: inline-block;
+      .dropbtn {
+        display: inline-block;
+        color: map-get($color, gray_f);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        border-right: 1px solid map-get($color, gray_c);
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: map-get($color, white);
+        width: 160px;
+        z-index: 1;
+        border-radius: 3px;
+        a {
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          color: map-get($color, gray_f);
+          &:hover {
+             background-color: map-get($color, orange);
+          }
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+.menu-bar {
+  margin: 0;
+  padding: 0;
+  .menu-bar-item {
+    display: inline-block;
+    list-style: none;
+    height: 44px;
+    border-left: 1px solid map-get($color, gray_c);
+    text-transform: uppercase;
+    .span {
+      border: 1px solid map-get($color, gray_f);
+      display: inline-block;
+      margin-left: 3px;
+      height: 22px;
+      border-radius: 2px;
+      line-height: 1.6;
+      padding: 0 7px 0 7px;
+      &:hover {
+        background: map-get($color, orange);
+        color: map-get($color, white) !important;
+      }
+     }
+    a {
+      padding: 13px 10px 15px 20px;
+      display: block;
+      height: 44px;
+      text-decoration: none;
+      color: map-get($color, gray_f);
+      &:hover {
+        color: map-get($color, orange);
+      }
+    }
+    .dropdowns {
+      position: relative;
+      .dropdown-contents {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        width: 240px;
+        height: 78px;
+        padding: 12px 16px;
+        left: -80px;
+        z-index: 1;
+        top: -24px;
+        text-transform: lowercase;
+        font-size: 14px;
+        border-radius: 3px;
+        p {
+          padding: 14px;
+        }
+      }
+    }
+  }
+  .menu-bar-item:hover .dropdown-contents {
+      display: block;
+    }
+  .menu-bar-item:last-child {
+    border-right: 1px solid map-get($color, gray_c);
+  }
+}
+.bg-top-menu {
+  background: map-get($color, black_gray);
+  height: 100px;
+  .logo {
+    padding: 28px 18px;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    .menu-item {
+      display: inline-block;
+      margin: 38px 20px;
+      transition: all 0.2s ease-in;
+      .active {
+        color: map-get($color, orange);
+        border-bottom: 4px solid map-get($color, orange);
+      }
+      a {
+        font-size: 16px;
+        color: map-get($color, white);
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        height: 58px;
+        &:hover {
+          color: map-get($color, orange);
+          border-bottom: 4px solid map-get($color, orange);
+        }
+      }
+    }
+    .menu-item:last-child {
+      font-size: 17px;
+      &:hover {
+        color: map-get($color, white);
+      }
+    }
+  }
+}
+.desktop {
+  display: block;
+  text-align: center;
+  height: 220px;
+  background: map-get($color, gray_d);
+  .title-desktop {
+    font-size: 24px;
+    padding: 30px 0 10px;
+    text-transform: uppercase;
+    font-family: 'latoblack';
+  }
+  .menu-desktop {
+    margin: 0;
+    padding: 0;
+  }
+  .menu-desktop-item {
+    list-style: none;
+    display: inline-block;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 5px;
+      color: map-get($color, gray_e);
+      transition: all 0.2s ease-in;
+      &:hover {
+      color: map-get($color, black);
+      }
+      &:before {
+        content:"\f015";
+        font-size: 12px;
+        padding-right: 3px;
+        font: 14px/1 FontAwesome;
+      }
+    }
+  }
+  .menu-desktop-item:last-child {
+    list-style: none;
+    display: inline-block;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 5px;
+      &:before {
+        content:"\f0a9";
+        font-size: 12px;
+        padding-right: 3px;
+        font: 14px/1 FontAwesome;
+      }
+    }
+  }
+}
